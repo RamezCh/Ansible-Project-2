@@ -1,0 +1,11 @@
+# vim templates/index.html.j2
+
+This file is for web application.
+
+It is deployed on server {{ ansible_nodename }}.
+
+IP address of the Host: {{ ansible_default_ipv4.address }}.
+
+Host Node Name: {{ ansible_nodename }}.
+
+Host OS Family: {{ ansible_os_family }}.
