@@ -1,0 +1,10 @@
+# handlers file for projectAnsible
+
+- name: Restart the Apache server
+  service: 
+    name: "{{ pkg_name }}"
+    state: restarted
+
+- name: Print command message
+  debug: 
+    msg: "Command executed successfully"
