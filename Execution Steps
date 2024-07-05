@@ -1,7 +1,7 @@
 # Ansible-Project-2
 
 =====================================================
-Sudo su -
+sudo su -
 
 cd /etc/ansible/roles
 
@@ -88,7 +88,7 @@ save the file
 
 '#' cd ../..
 
-You will be int he /etc/ansible directory now.
+You will be in the /etc/ansible directory now.
 
 '#' vim playbookProject.yml
 
