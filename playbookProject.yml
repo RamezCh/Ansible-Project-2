@@ -1,0 +1,5 @@
+- name: Execute projectAnsible role
+  hosts: webserver
+  become: true
+  roles:
+    - projectAnsible
