@@ -1,0 +1,21 @@
+# Tasks file for projectAnsible
+
+- name: Display the hostname
+  command: hostname -s
+  notify: Print command message
+
+- name: Install Apache on webserver
+  package: 
+    name: "{{ pkg_name }}"
+    state: "{{ pkg_state }}"
+
+- name: Start Apache server
+  service: 
+    name: "{{ pkg_name }}"
+    state: started
+
+- name: Deploy HTML page on Apache
+  template: 
+    src: index.html.j2
+    dest: /var/www/html/index.html
+  notify: Restart the Apache server
