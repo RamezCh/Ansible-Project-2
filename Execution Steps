@@ -5,9 +5,13 @@
 Setup of ansible Inventory file and SSH connect in the LAB
 =========================================
 
-1. Become root user
+1. a) Become root user
 
 # sudo su -
+
+1. b) Make sure packages are up to date.
+
+# sudo apt-get update
 
 2. Run the SSH command to generate SSH keys
 
